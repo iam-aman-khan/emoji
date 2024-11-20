@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janwar Boli</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Image Display</title>
+  <style>
+    /* Reset default margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Full height layout */
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Container for the image */
+    .image-container {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the image container */
+    .image-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image styling */
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Hover effect on image */
+    .image-container:hover img {
+      opacity: 0.8;
+    }
+
+    /* Caption styling (if you want to add a caption) */
+    .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 1.5rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="image-container">
-            <img src="emoji.jpeg" alt="My Image" class="picture">
-            <p class="caption">BUi Bui</p>
-        </div>
-    </div>
+
+  <!-- Image container -->
+  <div class="image-container">
+    <img src="emoji.jpeg" alt="Beautiful Image">
+    <!-- Optional caption -->
+    
+  </div>
+
 </body>
 </html>
