@@ -1,0 +1,61 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body with a background color and font */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f3f4f9, #f8fafc);  /* Soft gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container for centering content */
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Image container styles */
+.image-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    width: 100%;
+    max-width: 600px;  /* Limit the width of the image container */
+}
+
+/* Style for the image */
+.picture {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;  /* Add a smooth zoom effect */
+}
+
+/* Hover effect to zoom the image */
+.picture:hover {
+    transform: scale(1.05);
+}
+
+/* Caption style */
+.caption {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Optional: Add a hover effect on the caption */
+.caption:hover {
+    color: #333;
+    text-decoration: underline;
+}
